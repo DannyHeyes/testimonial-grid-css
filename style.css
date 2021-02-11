@@ -3,16 +3,16 @@ body {
   box-sizing: border-box;
   background-color: hsl(210, 46%, 95%);
   font-family: 'Barlow Semi Condensed', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-section{
+section {
   width: 99vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   overflow-x: hidden;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 img {
@@ -21,10 +21,18 @@ img {
   margin-top: 20px;
 }
 
+.quotation {
+  position: absolute;
+  left: 50%;
+  bottom: 82%;
+  border-radius: 0;
+}
+
 .container {
-  margin-top: 20px;
   width: 80%;
+  height: 98%;
   display: grid;
+  justify-content: space-around;
   grid-template-columns: 1fr;
   grid-template-areas:
   "daniel"
@@ -38,6 +46,7 @@ img {
 .card {
   border-radius: 20px;
   box-shadow: 0 29px 39px -14px rgba(0, 0, 0, 0.05);
+
 }
 
 .name {
@@ -82,6 +91,7 @@ img {
   background-color: hsl(263, 55%, 52%);
   color: white;
   grid-area: daniel;
+  position: relative;
 }
 
 
